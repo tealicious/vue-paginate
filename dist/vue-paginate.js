@@ -64,7 +64,7 @@
       },
       tag: {
         type: String,
-        default: 'ul'
+        default: 'tbody'
       }
     },
     data: function data () {
@@ -6655,7 +6655,7 @@
 
   LimitedLinksGenerator.prototype._currentChunkIndex = function _currentChunkIndex () {
     var currentChunk = Math.floor(this.currentPage / this.limit)
-    return currentChunk * this.limit 
+    return currentChunk * this.limit
   };
 
   LimitedLinksGenerator.prototype._allPagesButLast = function _allPagesButLast () {
@@ -6872,7 +6872,7 @@
       )
       // If the link is a number,
       // then incremented by 1 (since it's 0 based).
-      // otherwise, do nothing (so, it's a symbol). 
+      // otherwise, do nothing (so, it's a symbol).
       var text = Number.isInteger(link) ? link + 1 : link
       return h('li', { class: liClasses }, [h('a', data, text)])
     })

@@ -20,7 +20,7 @@ export default {
     },
     tag: {
       type: String,
-      default: 'ul'
+      default: 'tbody'
     }
   },
   data () {
